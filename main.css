@@ -270,8 +270,15 @@ template {
   display: none;
 }
 * {
-  border: 2px solid red;
+  border: solid 1px red;
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 body {
   font-family: 'Indie Flower', cursive;
 
@@ -315,11 +322,11 @@ img {
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 5px;
 }
 .temple {
-  width: 350px;
-  height: 300px;
+  width: 315px;
+  height: 275px;
 }
 ul {
   list-style: none;
@@ -340,6 +347,10 @@ ul {
     text-align: center;
     font-weight: bold;
   }
+  .temple {
+    width: 350px;
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -352,13 +363,4 @@ ul {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
